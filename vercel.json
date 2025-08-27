@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "rootDirectory": "frontend",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://YOUR-BACKEND-DOMAIN/api/$1" },
+    { "source": "/uploads/(.*)", "destination": "https://YOUR-BACKEND-DOMAIN/uploads/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
